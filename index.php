@@ -82,6 +82,11 @@ $users=[
            </p>
            <p>
              <?php
+              echo  "<strong> Ultimo post commentato: </strong>" . $user->lastPost;
+             ?>
+           </p>
+           <p>
+             <?php
               echo "<strong> Ultimo accesso: </strong>" . $user->lastSeenOnline;
               ?>
            </p>
