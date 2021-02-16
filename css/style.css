@@ -15,11 +15,18 @@
   }
   .card{
     width: 300px;
-    background: lightgreen;
+    background-color: lightgreen;
     border-radius: 20px;
     margin-top: 40px;
+    margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+  .card:hover{
+    background-color: darkblue;
+    color: white;
   }
   .card h2{
     padding-top: 20px;
@@ -29,6 +36,7 @@
     display: block;
     height: 150px;
     margin: 20px auto;
+    border-radius: 10px;
   }
   .card p{
     margin: 0 15px;
