@@ -1,34 +1,6 @@
 <?php
 
-/** User blog
- * @author Tommaso Figlia
- * @copyright 2021 Tommaso Figlia s.p.a
-*/
-class User{
-  public $name;
-  public $lastName;
-  public $age;
-  public $nickname;
-  public $email;
-  public $registeredAt;
-  public $lastSeenOnline;
-  public $lastPost;
-  public $profilePicture;
-
-
-  function __construct(string $name, string $lastName, int $age, string $nickname, string $email, string $registeredAt, string $lastSeenOnline, string $lastPost, string $profilePicture)
-  {
-   $this->name = $name;
-   $this->lastName = $lastName;
-   $this->age = $age;
-   $this->nickname = $nickname;
-   $this->email = $email;
-   $this->registeredAt = $registeredAt;
-   $this->lastSeenOnline = $lastSeenOnline;
-   $this->lastPost = $lastPost;
-   $this->profilePicture = $profilePicture;
-  }
-}
+include __DIR__ . '/classes/user.php';
 
 $users=[
   'user1' => new User('Tommaso', 'Figlia', 25, 'tomascy', 'tommasofiglia@gmail.com', gmdate("M d Y H:i:s", mktime(12, 33, 05, 5, 6, 2013)), gmdate("M d Y H:i:s", mktime(18, 37, 51, 2, 11, 2021)) , 'Come si guida una moto', 'https://www.iosonobellezza.it/wp-content/uploads/2020/12/F40-tris-2-696x559.jpg'),
@@ -37,7 +9,7 @@ $users=[
 
   'user3' => new User('Luciano', 'Alagna', 24, 'luckyano', 'lucianeddu@beddu.com', gmdate("M d Y H:i:s", mktime(19, 12, 05, 12, 3, 2020)), gmdate("M d Y H:i:s", mktime(19, 31, 05, 4, 12, 2020)) , 'Le mie nuove cuffie Ferrari Thrustmaster', 'https://images-na.ssl-images-amazon.com/images/I/61aBo7K8dwL._AC_SL1085_.jpg'),
 
-  'user4' => new User('MariaPia', 'Gianguzzi', 30, 'piuzza', 'maggika@pia.com', gmdate("M d Y H:i:s", mktime(06, 55, 38, 12, 2, 2016)), gmdate("M d Y H:i:s", mktime(03, 30, 05, 2, 2, 2021)) , 'Le mie nuove cuffie Ferrari', 'https://t2.ea.ltmcdn.com/it/images/0/9/2/5_cose_buffe_che_fanno_i_gatti_290_600.jpg')
+  'user4' => new User('Mariapia', 'Gianguzzi', 30, 'piuzza', 'malanova@pia.com', gmdate("M d Y H:i:s", mktime(06, 55, 38, 12, 2, 2016)), gmdate("M d Y H:i:s", mktime(03, 30, 05, 2, 2, 2021)) , 'Ultime news su u Paddu Siccu', 'https://t2.ea.ltmcdn.com/it/images/0/9/2/5_cose_buffe_che_fanno_i_gatti_290_600.jpg')
 ];
 
 ?>
